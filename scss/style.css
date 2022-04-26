@@ -1,0 +1,48 @@
+body {
+  background-color: antiquewhite;
+  -webkit-box-sizing: 0;
+          box-sizing: 0;
+  margin: 0;
+}
+
+header {
+  background-color: black;
+  text-align: center;
+}
+
+header h1 {
+  color: aliceblue;
+  margin: 0;
+}
+
+header h2 {
+  color: aqua;
+}
+
+main {
+  border-style: double;
+  color: black;
+  margin: 10px;
+}
+
+main h2 {
+  color: cadetblue;
+  margin-left: 10px;
+  text-align: left;
+}
+
+main p {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-overflow: unset;
+  margin: 5px;
+}
+
+ol {
+  list-style: none;
+}
+
+ol li {
+  font-family: sans-serif;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,40 @@
+body{
+    background-color: antiquewhite;
+    box-sizing: 0;
+    margin: 0;
+}
+header{
+    background-color: black;
+    text-align: center;
+    
+    h1{
+        color: aliceblue;
+        margin: 0;
+    }
+    h2{
+        color: aqua;
+    }
+}
+
+main{
+    border-style: double; color: black;
+    margin: 10px;
+    h2{
+        color:cadetblue;
+        margin-left: 10px;
+        text-align: left;
+    }
+    p{
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-overflow: unset;
+        margin: 5px;
+    }
+}
+
+ol{
+    list-style: none;
+    li{
+        font-family: sans-serif;
+    }
+}
