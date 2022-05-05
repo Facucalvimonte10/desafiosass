@@ -3,24 +3,29 @@ body {
   box-sizing: 0;
   margin: 0; }
 
-header {
+header, footer {
   background-color: black;
   text-align: center; }
-  header h1 {
+  header h1, footer h1 {
     color: aliceblue;
     margin: 0; }
-  header h2 {
-    color: aqua; }
+  header h2, footer h2 {
+    display: inline-block;
+    color: #0c0909;
+    background-color: #ededed; }
 
 main {
   border-style: double;
   color: black;
   margin: 10px; }
   main h2 {
-    color: cadetblue;
+    color: #d0c5c5;
     margin-left: 10px;
-    text-align: left; }
-  main p {
+    text-align: center;
+    background-color: #9a9393;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1rem; }
+  main .claseParrafo, main ol {
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-overflow: unset;
@@ -30,3 +35,15 @@ ol {
   list-style: none; }
   ol li {
     font-family: sans-serif; }
+
+div {
+  margin: 2rem; }
+  div img {
+    position: relative;
+    left: 35%;
+    padding: 5px;
+    border-style: dotted; }
+
+footer {
+  font-size: 7px;
+  margin-top: 0; }

@@ -1,8 +1,22 @@
+$bgtitulo2:rgb(237, 237, 237);
+$colortitulo2:rgb(12, 9, 9);
+
+@mixin estilotitulo(){
+    color:rgb(208, 197, 197);
+    margin-left: 10px;
+    text-align: center;
+    background-color:rgb(154, 147, 147);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1rem;
+
+}
+
 body{
     background-color: antiquewhite;
     box-sizing: 0;
     margin: 0;
 }
+
 header{
     background-color: black;
     text-align: center;
@@ -12,7 +26,9 @@ header{
         margin: 0;
     }
     h2{
-        color: aqua;
+        display: inline-block;
+        color:$colortitulo2;
+        background-color: $bgtitulo2;
     }
 }
 
@@ -20,11 +36,11 @@ main{
     border-style: double; color: black;
     margin: 10px;
     h2{
-        color:cadetblue;
-        margin-left: 10px;
-        text-align: left;
+        @include estilotitulo;
+
+    
     }
-    p{
+    .claseParrafo{
         text-align: center;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         text-overflow: unset;
@@ -33,8 +49,31 @@ main{
 }
 
 ol{
+    @extend .claseParrafo;
     list-style: none;
+    
     li{
-        font-family: sans-serif;
+            font-family: sans-serif;
+     }
+}
+
+div{
+    margin: 2rem;
+    img{
+        position: relative;
+        left: 35%;
+        padding: 5px;
+        border-style: dotted;
+
     }
 }
+
+
+footer{
+    @extend header;
+    font-size: 7px;
+    margin-top: 0;
+    
+}
+
+
